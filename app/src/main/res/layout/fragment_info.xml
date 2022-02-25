@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="cl.desafiolatam.pruebasuperheroes.modelo.Superheroe"/>
+        <variable
+            name="info"
+            type="Superheroe" />
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingHorizontal="56dp"
+    tools:context=".fragmentos.InfoFragment">
+
+    <TextView
+        android:id="@+id/txtAlignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alignment"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@{info.biography.alignment}"
+        android:textAllCaps="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtPublisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/publisher"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{info.biography.publisher}"
+        android:textSize="20sp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/txtFirstPublication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/primera_publication"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{info.biography.firstAppearance}"
+        android:textSize="20sp"
+        android:layout_marginBottom="12dp"/>
+
+
+</LinearLayout></layout>

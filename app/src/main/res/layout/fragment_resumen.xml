@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="cl.desafiolatam.pruebasuperheroes.modelo.Superheroe"/>
+        <variable
+            name="resumen"
+            type="Superheroe" />
+    </data>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    tools:context=".fragmentos.ResumenFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:text="@{resumen.name}" />
+
+    <ImageView
+        android:id="@+id/imgHeroeDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        tools:src="@tools:sample/avatars"
+        android:contentDescription="@string/imagen_detalle"
+        android:layout_marginVertical="16dp"/>
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textSize="20sp"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{resumen.biography.fullName}"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:paddingHorizontal="16dp"/>
+    <TextView
+        android:id="@+id/txtAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alias"
+        android:textSize="20sp"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{resumen.biography.aliases.get(0)}"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:paddingHorizontal="16dp"/>
+    <TextView
+        android:id="@+id/txtJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ocupation"
+        android:textSize="20sp"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{resumen.work.occupation}"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:paddingHorizontal="16dp"/>
+    <TextView
+        android:id="@+id/txtAfiliation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/afiliation"
+        android:textSize="20sp"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{resumen.connections.groupAffiliation}"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:paddingHorizontal="16dp"/>
+</LinearLayout>
+    </ScrollView>
+</layout>

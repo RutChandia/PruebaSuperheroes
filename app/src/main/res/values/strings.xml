@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Prueba  Superheroes</string>
+    <string name="nombreSuper">nombre</string>
+    <string name="tab1">Resumen</string>
+    <string name="tab2">Info</string>
+    <string name="tab3">Stats</string>
+    <string name="intelligence">Inteligencia</string>
+    <string name="stregth">Fuerza</string>
+    <string name="power">Poder</string>
+    <string name="combat">Combate</string>
+    <string name="speed">Rapidez</string>
+    <string name="imagen_detalle">Imagen detalle</string>
+    <string name="nombre">Nombre completo:</string>
+    <string name="alias">Alias:</string>
+    <string name="afiliation">Grupo afiliado:</string>
+    <string name="ocupation">Ocupación:</string>
+    <string name="alignment">Alignment:</string>
+    <string name="publisher">Publicado por:</string>
+    <string name="primera_publication">Primera aparición:</string>
+</resources>
